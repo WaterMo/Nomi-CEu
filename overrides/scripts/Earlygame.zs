@@ -198,6 +198,8 @@ mods.jei.JEI.hide(<contenttweaker:dark_red_coal>);
 
 mixer.recipeBuilder().inputs([<ore:dustSteel> * 3,<ore:dustBlackBronze> * 2, <contenttweaker:dark_red_coal> * 4]).outputs(<metaitem:dustBlackSteel>  * 9).EUt(15).duration(200).hidden().buildAndRegister();
 
+// Dust Silicon Dioxide
+chemical_reactor.recipeBuilder().inputs([<metaitem:dustSilicon>]).fluidInputs([<liquid:oxygen> * 2000]).outputs(<metaitem:dustSiliconDioxide> * 3).EUt(48).duration(240).buildAndRegister();
 
 // Clathrates
 chemical_reactor.recipeBuilder().inputs([<minecraft:quartz>]).fluidInputs([<liquid:glowstone> * 288]).outputs(<thermalfoundation:material:894>).EUt(75).duration(120).buildAndRegister();
